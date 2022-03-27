@@ -9,7 +9,7 @@
 
 // 1 კომენტარები
 
-/
+/*
   // კომენტარები გაფუჭდა თქვენი დავალებაა
   // არასწორად დაწერილი კომენტარი ჩაასწოროთ
   // და ასევე გამოიყენოთ თქვენი კოდის აღსაწერად
@@ -30,13 +30,18 @@
 */
 
 // >>>> კოდი დაწერეთ აქ
+const name = chester;
+const famale = bennington;
+let   agePerson  = 39;
+const birthDate = "March 20, 1976";
+const birthPlace = "phoenix,Arizona united states";
 
 
 
 
 // 
 
-/
+/*
   // დროა დავიწყოთ მზადება ჩვენს მომავალ პროექტზე.
   // ჩვენი დავალეებაა მოვიფიქროთ რაიმე პროდუქტთა სია
   // რომელსაც გამოვიყენებთ მომავალში.
@@ -50,8 +55,13 @@
 */
 
 
-/ / >>>> კოდი დაწერეთ აქ
+// >>>> კოდი დაწერეთ აქ
+// Mr robot/კომპიუტერების მაღაზია
+const keyboard = "razer";
+const type = "mechanical";
+const color = "green";
 
+let ProductQuant = "256 Gel";
 
 //
 
@@ -66,10 +76,10 @@
 
 
 
-const age = "1";
-const hisName = ["bob"];
-const isHigh = "true";
-const dateOfBirth = "1995";
+const age = 1;
+const hisName = "bob";
+const isHigh = true;
+const dateOfBirth = 1995;
 
 
 
@@ -85,7 +95,7 @@ console.log(typeof dateOfBirth === "number")
 
 
 
-/ აქ უნდა გაიგოთ თქვენი პროდუქტის სიის ტიპი
+// აქ უნდა გაიგოთ თქვენი პროდუქტის სიის ტიპი
 
 // მაგ: console.log(typeof age)
 
@@ -95,9 +105,13 @@ console.log(typeof dateOfBirth === "number")
 
 let num = 5;
 
+
+
 // გამოიყენეთ ყველა ვარიანტი რომლითაც შეგვიძლია ამ ციფრის გაზრდა
 
 // >>> კოდი დაწერეთ აქ
+num = num +5;
+num = num*5;
 
 
 //
@@ -106,10 +120,15 @@ console.log(num)
 
 
 
+
+
 // სცადეთ შეკრიბოთ განსხვავებული ტიპის მქონე 
 // მნიშვნელობები და გაიგოთ შეკრებილი მონაცემების ტიპი
 
 // >>> კოდი დაწერეთ აქ
+let  number = 4;
+let string  = "6";
 
+console.log(number + +string);
 
 //

@@ -23,8 +23,8 @@ const text2 = "0";
 
 // >>> კოდი დაწერეთ აქ 
 
-const isFalse = [];
-const isTrue = [];
+const isFalse = [num1,num2,emptyString,boolean2];
+const isTrue = [num2,text,text2];
 
 //
 

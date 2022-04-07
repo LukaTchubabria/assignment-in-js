@@ -23,8 +23,8 @@ const text2 = "0";
 
 // >>> კოდი დაწერეთ აქ 
 
-const isFalse = [];
-const isTrue = [];
+const isFalse = [num1,boolean1,boolean2,emptyString];
+const isTrue = [num2,text,text2];
 
 //
 
@@ -32,8 +32,14 @@ const isTrue = [];
 // შეცვალეთ ერთი ასო რომ მიიღოთ ჭეშმარიტი დებულება
 // მოკლედ ახსენით მუშაობის პრინციპი თუ რატომ იმოქმედა
 
-console.log("abc" > "ah")
-console.log(2 === "004")
+console.log("azc" > "ah")
+//ამ შემთხვევაში ჯერ ვადარებთ ორივე სტრინგის პირველ "Character"-ს(ქართულად არ მახსოვს რა ქვია),
+//თუ ერთმანეთის ტოლია გადავდივართ მეორეზე და იმათ ვადარებთ, მოცემულ პირობაში b<h და შესაბამისად დებულება იქნებოდა არასწორი,
+//ამიტომ b შევცვალე ისეთი ასოთი, რომელიც უფრო მაღლა იდგებოდა h ზე და დებულება გახდა ჭეშმარიტი
+console.log(2 === "002")
+//ამ შემთხვევაშიც გვაქვს ერთ მხარეს რიცხვი და მეორე მხარეს სტრინგი,
+// სტრინგი ხდება რიცხვი და შესაბამისად "002" ხდება რიცხვი 2  და დებულებაც არის ჭეშმარიტი
+
 
 
 
@@ -43,7 +49,13 @@ console.log(2 === "004")
 // 18 წელზე შესთავაზეთ სასმელი
 
 // >>> კოდი დაწერეთ აქ 
+let age = prompt("What's your age?");
 
+if(age >= 18){
+  console.log("You can drink");
+}else{
+  console.log("You can't drink");
+}
 
 //
 
@@ -51,6 +63,27 @@ console.log(2 === "004")
 // მოიფიქრეთ 2 if else-ის მაგალითი თქვენით
 
 // >>> კოდი დაწერეთ აქ
+let score = prompt("enter your score");
+let barrier = 70;
+let secondChance = 50;
+let teamLeader = 100;
+
+let result;
+
+if(score >= teamLeader){
+  result="you have chance to be a team leader";
+}else if(barrier <= score){
+  result="You are in the team";
+}else if(score < barrier && score >= secondChance){
+  result="You can try again";
+}else{
+  result="Go home";
+}
+
+console.log(result);
+
+
+
 
 //
 
@@ -58,6 +91,14 @@ console.log(2 === "004")
 // გადაიყვანეთ If ternary operator-ში მაგ. (true ? 1 : 2) 
 
 // >>> კოდი დაწერეთ აქ
+
+result = (score >= teamLeader) ? "you have chance to be a team leader" :
+(barrier <= score) ? "You are in the team" : 
+(score < barrier && score >= secondChance) ? "You can try again" :
+"Go home";
+
+
+console.log(result);
 
 //
 
@@ -80,6 +121,19 @@ let colorId = 3
 
 // >>> კოდი დაწერეთ აქ
 
+if(colorId == 0){
+  console.log("black");
+}else if(colorId == 1){
+  console.log("blue");
+}else if(colorId == 2){
+  console.log("green");
+}else if(colorId == 3){
+  console.log("red");
+}else if(colorId == 4){
+  console.log("white");
+}else{
+  console.log(undefined);
+}
 
 //
 
@@ -90,6 +144,14 @@ let colorId = 3
 // >>> კოდი დაწერეთ აქ
 
 
+let color = (colorId == 0) ? "black":
+(colorId == 1) ? "blue":
+(colorId == 2) ? "green" : 
+(colorId == 3) ? "red" :
+(colorId == 4) ? "white" :
+undefined;
+
+console.log(color);
 //
 
 
@@ -101,6 +163,25 @@ let colorId = 3
 
 // >>> კოდი დაწერეთ აქ
 
+switch(colorId){
+  case 0:
+    color = "black";
+    break;
+  case 1: 
+    color = "blue";
+    break;
+  case 2: 
+    color = "green";
+    break;
+  case 3: 
+    color = "red";
+    break;
+  case 4:  
+     color = "white";
+     break;
+  default:
+    undefined;
+}
 
 //
 
@@ -138,7 +219,19 @@ function myFun() {
   let x = prompt("მე მზად არ ვარ პასუხისათვის")
 
   // >>> კოდი დაწერეთ აქ გამოიყენეთ Switch
-
+  switch(x){
+    case "გამარჯობა" :
+      alert("გამარჯობა");
+      break;
+    case "მაინტერესებს სამუშაო საათები" :
+      alert("ორშაბათი-პარასკევი 10:00 - 18:00");
+      break;
+    case "მინდა ჩაწერა" :
+      alert("მოგვწერეთ დღე და საათი");
+      break;
+    default : 
+    alert("ჩაწერილი ხართ");
+  }
 
   //
 
